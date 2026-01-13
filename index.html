@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Modern Digital Clock</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="sr-only">Modern Digital Clock</h1>
+    <main class="clock-app">
+      <section class="card">
+        <div class="clock" role="status" aria-live="polite" aria-atomic="true">
+          <span id="hours" class="digits">00</span>
+          <span class="sep">:</span>
+          <span id="minutes" class="digits">00</span>
+          <span class="sep">:</span>
+          <span id="seconds" class="digits small">00</span>
+          <span id="ampm" class="ampm">AM</span>
+        </div>
+
+        <div class="meta">
+          <div id="date" class="date">Monday, January 1, 1970</div>
+          <div id="tz" class="tz">UTC</div>
+        </div>
+
+        <div class="controls">
+          <button id="formatBtn" aria-pressed="false" aria-label="Toggle time format">24-hour</button>
+          <button id="themeBtn" aria-pressed="false" aria-label="Toggle theme">Toggle Theme</button>
+        </div>
+
+        <div class="card-footer">
+          <a class="privacy-link" href="privacy.html">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+    
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
